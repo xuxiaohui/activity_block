@@ -1,0 +1,80 @@
+/**
+ * Created by xuxiaohui on 2017/6/22.
+ */
+let { ParamConfig,UrlPath }  = require('hhmk-const');
+const ACTIVITYARRAY = [
+    //体检
+    {key:'physical_examination',
+        value:ParamConfig.ACTIVITYBLOCK['physical_examination'],
+        desc:'商品',
+        shareLogo:`/assets/images/share_logo.png`,
+        shareUrl:`${UrlPath.ECSHOP_DETAIL}?ativityId={0}`
+    },
+    //实物商品
+    {key:'actual_good',
+        value:ParamConfig.ACTIVITYBLOCK['actual_good'],
+        desc:'商品',
+        shareLogo:`/assets/images/share_logo.png`,
+        shareUrl:`${UrlPath.ECSHOP_DETAIL}?ativityId={0}`
+    },
+    //公开课
+    {key:'public_class',
+        value:ParamConfig.ACTIVITYBLOCK['public_class'],
+        desc:'公开课',
+        shareLogo:`/assets/images/share_logo.png`,
+        shareUrl:`${UrlPath.PUBLIC_CLASS_DETAIL}?id={0}`
+    },
+    //知识库
+    {key:'knowledge',
+        value:ParamConfig.ACTIVITYBLOCK['knowledge'],
+        desc:'健康知识',
+        shareLogo:`/assets/images/share_logo.png`,
+        shareUrl:`${UrlPath.KNOWLEDGE_DETAIL}?bookId={0}`
+    },
+    //悦儿早报
+    {key:'yue_morning',
+        value:ParamConfig.ACTIVITYBLOCK['yue_morning'],
+        desc:'悦儿早报',
+        shareLogo:`/yuedoctor/images/yue_share.jpg`,
+        shareUrl:`${UrlPath.MORNING_PAPER}?id={0}`
+    },
+    //视频
+    {key:'video',
+        value:ParamConfig.ACTIVITYBLOCK['video'],
+        desc:'视频',
+        shareLogo:`/yuedoctor/images/yue_share.jpg`,
+        shareUrl:`${UrlPath.KNOWLEDGE_VIDEO}?id={0}`
+    },
+    //专家驾到
+    {key:'expert',
+        value:ParamConfig.ACTIVITYBLOCK['expert'],
+        desc:'专家',
+        shareTitle:'专家驾到',
+        shareDesc:'孕产、育儿、女性、中医、慢病......你想要的专家都在这里，还可以预约就诊、在线提问',
+        shareLogo:`/doctorschurch/images/shareweixin.jpg`,
+        shareUrl:`${UrlPath.DOCTOR_CHURCH_DETAIL}?activityId={0}`
+    },
+    //悦儿医生
+    {key:'yue_doctor',
+        value:ACTIVITYBLOCK['yue_doctor'],
+        desc:'悦儿医生',
+        shareTitle:'悦儿医生',
+        shareDesc:'孕产、育儿、女性、中医、慢病......你想要的专家都在这里，还可以预约就诊、在线提问',
+        shareLogo:`/doctorschurch/images/shareweixin.jpg`,
+        shareUrl:`${UrlPath.DOCTOR_CHURCH_DETAIL}?activityId={0}`
+    },
+    //福利汇
+    {key:'welfare',
+        value:ParamConfig.ACTIVITYBLOCK['welfare'],
+        desc:'健康活动',
+        shareUrl:`${UrlPath.WELFARE_DETAIL}?id={0}`
+    },
+    //月子中心
+    {key:'yue_center',
+        value:ParamConfig.ACTIVITYBLOCK['yue_center'],
+        desc:'月子中心',
+        shareUrl:`${UrlPath.YUECENTER_DETAIL}?id={0}`
+    }
+];
+
+module.exports = ACTIVITYARRAY
